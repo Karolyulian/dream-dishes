@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Receta</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Agregar Nueva Receta</h1>
+    </header>
+    <main>
+        <form action="agregar_receta.php" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" required></textarea>
+            </div>
+            <div>
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+            <div>
+                <label for="ventajas_nutricionales">Ventajas Nutricionales:</label>
+                <textarea id="ventajas_nutricionales" name="ventajas_nutricionales" required></textarea>
+            </div>
+            <div>
+                <label for="desventajas">Desventajas:</label>
+                <textarea id="desventajas" name="desventajas" required></textarea>
+            </div>
+            <button type="submit" class="btn">Agregar Receta</button>
+        </form>
+    </main>
+</body>
+</html>

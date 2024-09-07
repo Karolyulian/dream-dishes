@@ -1,0 +1,49 @@
+/* Centrar el formulario */
+.contacto {
+    text-align: center;
+}
+
+/* Estilos para los campos de entrada y etiquetas */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Alineación horizontal centrada para los elementos del formulario */
+.form-group,
+label,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+button[type="submit"] {
+    margin: 0 auto;
+    max-width: 400px;
+}

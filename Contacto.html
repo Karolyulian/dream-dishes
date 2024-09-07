@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dream Dishes - Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Cream and Gray Modern New Fashion ETSY shop cover.png" alt="Logo Dream Dishes" class="logo">
+        <h1>............................</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li> <!-- Página principal -->
+                <li><a href="Recetas.php">Recetas</a></li> <!-- Página de recetas -->
+                <li><a href="Acerca de.html">Acerca de</a></li> <!-- Página sobre el sitio -->
+                <li><a href="Contacto.html">Contacto</a></li> <!-- Página de contacto -->
+                <li><a href="Politica_Privacidad.html">Política de Privacidad</a></li> <!-- Página de política de privacidad -->
+                <li><a href="Terminos_condiciones.html">Términos y Condiciones</a></li> <!-- Página de términos y condiciones -->
+                <li><a href="login.html">Iniciar Sesión</a></li> <!-- Página de inicio de sesión -->
+                <li><a href="register.html">Registrarse</a></li> <!-- Página de registro -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contacto">
+            <h2>Formulario de Contacto</h2>
+            <p>Si tienes alguna pregunta, comentario o sugerencia, por favor utiliza el siguiente formulario para ponerte en contacto con nosotros. Te responderemos a la brevedad posible.</p>
+            
+            <form id="formularioContacto" action="https://formsubmit.co/karol27yuli@gmail.com" method="POST" onsubmit="return enviarFormulario();">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="INGRESE NOMBRE" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="INGRESE CORREO ELECTRONICO (OPCIONAL)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="INGRESE NUMERO TELEFONICO (OPCIONAL)">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="INGRESE MENSAJE" rows="6" required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+
+            <!-- Mensaje de éxito (oculto por defecto) -->
+            <p class="mensaje-exito" id="mensajeExito" style="display: none;">Tu mensaje fue enviado con éxito.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Dream Dishes</p>
+    </footer>
+</body>
+</html>
